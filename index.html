@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="bike1">Bonneville Bobber</a></li>
+                <li><a href="#" id="bike2">ROCKET 3</a></li>
+                <li><a href="#" id="bike3">R nine T</a></li>
+                <li><a href="#" id="bike4">Nightster</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve now</a>
+        </nav>
+        <div class="info">
+            <div >
+                <h2 id="one">1200 </h2>
+                <p>CC</p>
+                
+            </div>
+            <div >
+                <h2 id="OP">185km/h</h2>
+                <p>Speed</p>
+                
+            </div>
+            <div>
+                <h2 id="UX">78ps</h2>
+                <p>MaxPower</p>
+                
+            </div>
+            <div>
+                <h2 id="UI">29km/L</h2>
+                <p>milage</p>
+                
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="model">BIKE 1</h2>
+            </div>
+            
+            
+        </div>
+        
+       
+    </div>
+    <script>
+        var heder = document.getElementById("header");
+        var b1 = document.getElementById("bike1");
+        var b2 = document.getElementById("bike2");
+        var b3 = document.getElementById("bike3");
+        var b4 = document.getElementById("bike4");
+        var model = document.getElementById("model");
+        var one = document.getElementById("one");
+        var OP = document.getElementById("OP")
+        var UX = document.getElementById("UX")
+        var UI = document.getElementById("UI")
+    
+
+
+        b1.onclick = function(){
+            header.style.backgroundImage = " url(images/image-1.jpg)"
+            model.innerHTML = "Bonneville Bobber"
+            one.innerHTML="1200"
+            OP.innerHTML = "185km/h"
+            UX.innerHTML = "78ps"
+            UI.innerHTML="29km/L"
+        
+            
+
+        }
+       
+        
+        b2.onclick = function(){
+            header.style.backgroundImage = " url(images/image-2.jpg)"
+            model.innerHTML = "ROCKET 3"
+            one.innerHTML="2458"
+            OP.innerHTML = "233km/h"
+            UX.innerHTML = "167ps"
+            UI.innerHTML="14.7/L"
+           
+
+        } 
+     
+        b3.onclick = function(){
+            header.style.backgroundImage = " url(images/image-3.jpg)"
+            model.innerHTML = "R nine T"
+            one.innerHTML ="1170"
+            OP.innerHTML = "200km/h"
+            UX.innerHTML = "94.6hp"
+            UI.innerHTML="19.6km/L"
+
+
+        }
+         b4.onclick = function(){
+            header.style.backgroundImage = " url(images/image-4.jpg)"
+            model.innerHTML = "Nightster"
+            one.innerHTML="975"
+            OP.innerHTML = "130"
+            UX.innerHTML = "89.7ps"
+            UI.innerHTML="19.6KM/L"
+
+        
+        }
+    </script>
+</body>
+</html>
